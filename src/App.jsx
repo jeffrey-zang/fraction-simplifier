@@ -23,7 +23,7 @@ const App = () => {
   }
 
   return (
-    <div className="flex items-center justify-center gap-4 h-screen App">
+    <div className="flex items-center justify-center gap-4 h-screen App flex-col md:flex-row">
       <div className="border border-gray-700 p-4 rounded-lg">
         <h1 className="font-bold text-3xl">Your fractions.</h1>
         <h1>Simplified.</h1>
