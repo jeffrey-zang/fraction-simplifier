@@ -10,8 +10,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Theme
       accentColor='indigo'
       grayColor='slate'
-      panelBackground='translucent'
       radius='large'
+      appearance='dark'
     >
       <App />
     </Theme>
