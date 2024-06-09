@@ -13,4 +13,6 @@ Jeffrey Zang - Lead Technical Programmer<br/>
 Gary Zhang - Chief Mathematics Officer
 
 ## Links
-Here is our JAMHacks 8 submission page on [DoraHacks](https://dorahacks.io/buidl/13344).
+Here is our JAMHacks 8 submission page on [DoraHacks](https://dorahacks.io/buidl/13344).<br/>
+You can view our live site deployed [here](https://fraction-simplifier.vercel.app/).<br/>
+Here is our [Demo Video](https://www.youtube.com/watch?v=hTf0tgrLD2s).
