@@ -1,11 +1,13 @@
 import { useState } from "react"
 import * as Form from "@radix-ui/react-form"
+import { Button } from "@radix-ui/themes"
 
 const App = () => {
 
   const [denominator, setDenominator] = useState('')
   const [numerator, setNumerator] = useState('')
   const [result, setResult] = useState('')
+  const [shareText, setShareText] = useState('Share this result')
 
   const simplifyFraction = (e) => {
     e.preventDefault()
@@ -55,7 +57,19 @@ const App = () => {
       <div className="w-[292px] border border-gray-700 p-4 rounded-lg h-[329px]">
         <h1 className="font-bold text-3xl">Result</h1>
         <p>Your simplified fraction is:</p>
-        <h1 className="mt-4 font-bold">{result}</h1>
+        {
+          result !== '' && (
+            <div>
+              <h1 className="mt-4 font-bold">{result}</h1>
+              <button className="Button mt-4" onClick={
+                () => {
+                  navigator.clipboard.writeText(`Did you know that ${numerator}/${denominator} is equal to ${result}? Try it yourself!`)
+                  setShareText('Copied!')
+                }
+              }>{shareText}</button>
+            </div>
+          )
+        }
       </div>
     </div>
   )
